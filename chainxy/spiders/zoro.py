@@ -113,5 +113,4 @@ class ZoroSpider(scrapy.Spider):
 				if tokval.startswith ("'"):
 					tokval = u'"%s"' % tokval[1:-1].replace ('"', '\\"')
 			result.append((tokid, tokval))
-
 		return tokenize.untokenize(result)
